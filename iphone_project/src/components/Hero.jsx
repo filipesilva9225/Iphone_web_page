@@ -3,7 +3,7 @@ function Hero() {
     <section className="relative h-screen overflow-hidden bg-black">
       <div className="absolute top-1 bottom-0 left-0 right-0 z-0">
         <img
-          className="w-full h-full object-cover opacity-90"
+          className="w-full h-10% object-cover opacity-90"
           src="../../public/img/hero.jpg"
           alt=""
         />
