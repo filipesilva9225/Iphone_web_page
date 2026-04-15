@@ -1,8 +1,23 @@
 function HighLights() {
   const specs = [
-    { value: "48MP", label: "Principal", color: "text-blue-600" },
-    { value: "12MP", label: "Ultra Wide", color: "text-orange-500" },
-    { value: "12MP", label: "Telefoto 5x", color: "text-blue-600" },
+    {
+      value: "48MP",
+      label: "Principal",
+      text: "Sensor quad-pixel com foco automático",
+      color: "text-blue-600",
+    },
+    {
+      value: "12MP",
+      label: "Ultra Wide",
+      text: "Campo de visão de 120° com modo noturno",
+      color: "text-orange-500",
+    },
+    {
+      value: "12MP",
+      label: "Telefoto 5x",
+      text: "Zoom óptico de 5x com estabilização",
+      color: "text-blue-600",
+    },
   ];
 
   return (
@@ -75,7 +90,8 @@ function HighLights() {
             className="rounded-2xl bg-gray-900 hover:bg-gray-800 p-6 transition-all duration-300 hover:scale-105 cursor-pointer"
           >
             <p className={`text-3xl font-bold ${spec.color}`}>{spec.value}</p>
-            <p className="text-sm text-gray-300 mt-2">{spec.label}</p>
+            <p className="text-xl text-white">{spec.label}</p>
+            <p className="font-bold text-sm text-gray-300 mt-2">{spec.text}</p>
           </div>
         ))}
       </div>
