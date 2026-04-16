@@ -84,6 +84,31 @@ function Colors() {
             </button>
           ))}
         </div>
+
+        <div className="grid gap-8 mt-20 grid-cols-2">
+          {models.map((model, index) => (
+            <div
+              key={index}
+              className="bg-gradient-to-br from-gray-900 to-transparent rounded-3xl p-8 border border-gray-800"
+            >
+              <div className="text-4xl mb-4">📱</div>
+              <h3 className="text-2xl font-bold mb-3">{model.name}</h3>
+              <p className="text-gray-400 mb-4">{model.screen}</p>
+              <ul className="space-y-2 text-gray-300">
+                <li>{model.storage}</li>
+                <li>{model.battery}</li>
+                <li>{model.weight}</li>
+              </ul>
+            </div>
+          ))}
+        </div>
+
+        <div className="text-center mt-16">
+          <button className="bg-blue-700 mb-8 hover:scale-105 shadow-md shadow-blue-500/50 cursor-pointer text-white px-12 py-4 rounded-full text-lg font-medium transition-all duration-300">
+            Compre Agora á partir de R$ 9.950,00
+          </button>
+          <p>Ou em até 12x de R$ 994,92 sem jurus</p>
+        </div>
       </div>
     </section>
   );
